@@ -27,21 +27,22 @@ div{
     height: var(--vh);
 }
 .title{
-    max-width: 428px;
-    max-height: 569px;
+    max-width: 400px;
+    max-height: 500px;
     border: #ee7752 3px solid;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 16px;
     padding: 10px 30px 10px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 @media screen and (min-width: 900px){
     .container {
         width: 900px;
         display: flex;
     }
+    .footer{
+        margin-top: 200px;
+    }
+    
 }
 @media screen and (max-width: 899.98px){
     .container {
@@ -50,6 +51,9 @@ div{
     }
     .box{
         float: left;
+    }
+    .footer{
+        margin: 10px;
     }
 }
 .container{
@@ -67,11 +71,6 @@ div{
     display: block;
     text-align: center;
     box-sizing: border-box;
-}
-.box:after, .box:before{
-    content: "";
-    display: block;
-    clear: both;
 }
 .box-card{
     margin-bottom: 15px;
@@ -100,10 +99,4 @@ div{
 }
 .card-container div{
     margin: 5px;
-}
-.footer{
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
